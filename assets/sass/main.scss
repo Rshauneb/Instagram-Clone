@@ -1,0 +1,153 @@
+@import 'reset';
+
+div, p, span{
+ font-family: 'Open Sans', sans-serif;
+ color: #000;
+}
+
+body{
+  color: #FAFAFA;
+}
+
+
+i{
+  color: #5C534A;
+}
+
+header{
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  a{
+     width: 25%;
+     display: inline-block;
+     margin-left: -3px;
+     text-align: center;
+     font-size: 25px;
+     box-sizing: border-box;
+     padding: 12px;
+     background:white;
+
+     &:hover{
+       .fa-heart{
+         color: red;
+       }
+     }
+
+  }
+}
+
+.container{
+  z-index: -1;
+  padding-top: 50px;
+  background: #FAFAFA;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+
+
+  .card{
+    min-height: 650px;
+    width: 500px;
+    background: #fff;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+}
+
+
+.card-header{
+  padding: 15px;
+    .profile-img{
+      display: inline-block;
+      background: red;
+      height: 26px;
+      width: 25px;
+      border-radius: 50%;
+      position: relative;
+      top: 3px;
+      margin-right: 5px;
+      overflow: auto;
+    }
+        .profile-info{
+          display: inline-block;
+          .name{
+          font-size: 14px;
+          font-weight: 700;
+          }
+            .location{
+              font-size: 12px;
+            }
+          }
+              .time{
+                float: right;
+                display: inline-block;
+                color: #000;
+                font-size: 12px;
+                position: relative;
+                top: 10px;
+              }
+
+              .content{
+                img{
+                  width:100%;
+                  padding-top: 50px;
+                  overflow: auto;
+                }
+              }
+                .card-footer{
+                  box-sizing: border-box;
+                  .likes{
+                    color: #111;
+                    font-size: 12px;
+                    padding-top: 10px;
+                  }
+                  .description{
+                    p{
+                      font-size: 14px;
+                      margin: 0;
+                      padding-top: 10px;
+
+                      .username{
+                        font-weight: 700;
+                        padding-top: 10px;
+                      }
+                    }
+                  }
+                  hr{
+                    padding: 0;
+                  }
+                  form{
+                    position: relative;
+                    bottom: -160px;
+                    .heart{
+                    display: inline-block;
+                    width: 15%;
+                    }
+                    .add-commnet{
+                    display: inline-block;
+                    width: 60%;
+                    input{
+                      width: 100%;
+                      font-weight: 16px;
+                      border: 0px solid #fff;
+                    }
+                    }
+                    .options{
+                      display: inline-block;
+                      width: 15%;
+
+                      #dots{
+                        position: relative;
+                        left: 85px;
+                      }
+                    }
+                  }
+                }
+
+              }
